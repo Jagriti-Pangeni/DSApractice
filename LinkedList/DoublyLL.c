@@ -1,3 +1,4 @@
+//creating a doubly link list.
 #include <stdio.h>
 #include <stdlib.h>
 

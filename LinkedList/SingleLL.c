@@ -1,3 +1,4 @@
+//creating and traversing single link list.
 #include <stdio.h>
 #include <stdlib.h>
 
