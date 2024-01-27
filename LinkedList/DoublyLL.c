@@ -3,6 +3,7 @@
 
 // Define a structure for a node in the linked list
 struct Node {
+    struct node* pre;
     int data;
     struct Node* next;
 };
@@ -16,6 +17,7 @@ struct Node* createNode(int value) {
     }
     newNode->data = value;
     newNode->next = NULL;
+    newNode->pre = NULL;
     return newNode;
 }
 
@@ -27,7 +29,10 @@ int main() {
 
     // Link the nodes
     head->next = second;
+    head->pre = NULL;
+    second->pre = head;
     second->next = third;
+    third->pre=second;
 
     // Print the linked list
     struct Node* current = head;
